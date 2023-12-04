@@ -1,0 +1,3233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1230px;
+    margin: 0 auto;
+}
+.info a {
+    text-decoration: none;
+    color: rgba(30, 30, 30, 0.93);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+
+}
+
+.icon img {
+    margin-left: 1.06rem;
+}
+
+.info__title > a {
+    color: rgba(30, 30, 30, 0.93);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 40px;
+}
+
+.main__box {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main__container {
+    display: flex;
+    justify-content: space-between;
+
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-top: 88px;
+    margin-right: 20px;
+}
+
+.title {
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 132.5%;
+}
+
+.info__text {
+    padding-top: 15px;
+    max-width: 600px;
+    color: #1E1E1E;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 132.5%;
+}
+.work__text{
+    margin-top: 20px;
+}
+.info__btn{
+    margin-top: 50px;
+    border-radius: 10px;
+    background: #009C77;
+    border: none;
+    display: inline-flex;
+    padding: 18px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.main__container button a {
+    color: #FFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 132.5%;
+    text-decoration: none;
+
+}
+
+.main__box button a {
+    color: #FFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 132.5%;
+    text-decoration: none;
+
+}
+
+.eureka {
+    color: #009C77;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 132.5%;
+}
+
+.work__info {
+    margin-top: 7rem;
+}
+
+/* -------------------------- */
+
+.works__cards{
+    margin-top: 140px;
+}
+
+.card {
+    display: flex;
+    width: 400px;
+    height: 479px;
+    padding-top: 415px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F4F4F4;
+
+}
+.card__btn {
+    width: 100%;
+    margin-top: 69px;
+    border-radius: 10px;
+    background: #009C77;
+    border: none;
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+
+}
+.card__btn a {
+    color: #FFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132.5%;
+}
+
+/* ------------------------------- */
+
+
+.info__section h2 {
+    display: flex;
+    justify-content: center;
+}
+.info__section {
+    margin-top: 170px;
+    color: #1E1E1E;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132.5%;
+}
+
+.info__section span {
+    color: #009C77;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 132.5%;
+}
+
+.one {
+    margin-top: 60px;
+}
+
+.two {
+    margin-top: 36px;
+}
+.thre {
+    margin-top: 36px;
+}
+
+/* --------------------------- */
+
+.result h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 206px;
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 132.5%;
+}
+
+.result img {
+    margin-top: 27px;
+    margin-left: 55px;
+}
+
+/* ------------------------- */
+
+.event__icon  h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 187.19px;
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 132.5%;
+}
+
+
+
+.transition {
+
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-top: 88px;
+    margin-right: 20px;
+}
+
+.transition img {
+    width: 30%;
+    margin-right: 8px;
+}
+
+.event__card {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-top: 88px;
+    margin-right: 20px;
+}
+.event__card img {
+    margin: 0 35px;
+}
+
+/* _______________________ */
+
+.footer {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    height: 100px;
+
+}
+
+.footer__info  p {
+    color: #2C2C2C;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__info a {
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+
+/* -------------- */
+
+.heder__next {
+    color: #2B2B2B;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 132.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 72px;
+    gap: 20px;
+}
+
+.card__mation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 76.5px;
+    width: 256px;
+    height: 330px;
+    border-radius: 8px;
+    background: #F4F4F4;
+}
+
+.card__info {
+    background: white;
+    width: 253px;
+    color: #787878;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132.5%;
+
+}
+
+.card__info button {
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #009C77;
+    display: flex;
+    padding: 12px 27px 11px 28px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.card__info a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132.5%;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background: #009C77;
+
+    margin-right: 20px;
+
+
+}
+
+.card__container{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car {
+    display: flex;
+    margin-top: 70px;
+
+}
+
+.car__image {
+    width: 653.272px;
+    height: 556px;
+}
+
+.car__btn .tg__text {
+    color: #009C77;
+    margin-bottom: 30px;
+}
+
+.car__btn p {
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132.5%;
+}
+.car__btn button.white  {
+    display: inline-flex;
+    height: 74px;
+    padding: 15px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #000;
+    text-decoration: none;
+    background: white;
+}
+.car__btn button.green {
+    display: inline-flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #009C77;
+    border: none;
+}
+
+.car__btn a.white {
+    text-decoration: none;
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 132.5%;
+}
+.car__btn a.green {
+    text-decoration: none;
+    color: #FFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132.5%;
+}
+.footer_t{
+    margin-top: 247px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    height: 80px;
+}
+
+
+.dk_text{
+    max-width: 500px;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+.btn__car{
+    padding-top: 42px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 2786px) {
+    .video__item {
+        height: 875px;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+
+    /* MAIN PAGE */
+
+    .container{
+        width: 1050px;
+    }
+
+    header .header-number {
+        display: none;
+    }
+
+    header .logo img {
+        width: 30px;
+    }
+
+
+    .works__cards {
+        margin-top: 70px;
+    }
+
+    .work__info {
+        margin-top: 40px;
+    }
+
+    .work__text {
+        width: 485px;
+    }
+
+    .work__text h1 {
+        font-size: 40px;
+    }
+
+    .work__text .info__text {
+        font-size: 40px;
+        font-size: 28px;
+    }
+
+    .work__image {
+        width: 320px;
+        height: 320px;
+    }
+
+    .card {
+        width: 32%;
+    }
+
+    .main__container button a {
+        font-size: 18px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .info__section {
+        margin-top: 100px;
+    }
+
+    .info__section .one {
+        margin-top: 70px;
+    }
+
+    .info__section h2 {
+        font-size: 36px;
+    }
+
+    .info__section p {
+        font-size: 30px;
+    }
+
+    .info__section span {
+        font-size: 30px;
+    }
+
+    .result h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .result img {
+        width: 1000px;
+        margin: 50px auto 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video__item {
+        height: 795px;
+    }
+
+    .event__icon h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .transition {
+        margin: 90px 50px 0;
+    }
+
+    .transition img {
+        width: 340px;
+        height: 240px;
+    }
+
+    .event__card img {
+        width: 120px;
+        margin: 0 20px 0 0;
+    }
+
+    .footer__iner img {
+        width: 36px;
+        height: 26px;
+    }
+
+
+    /* CATALOG */
+
+    header .info {
+        margin-top: 10px;
+    }
+
+    .heder__next {
+        margin-bottom: 60px;
+    }
+
+    .order__card {
+        width: 260px;
+        height: 320px;
+        margin-bottom: 50px;
+    }
+
+    .order__card img {
+        width: 180px;
+    }
+
+    .order__card .card__mation {
+        width: 180px;
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .order__card .card__info {
+        width: 180px;
+    }
+
+    .order__card p {
+        font-size: 16px;
+    }
+
+    .order__card .card__info button {
+        font-size: 22px;
+        width: 180px;
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .order__card .card__info a {
+        font-size: 22px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    /* INFO */
+    .car__text .tg__text {
+        color: #009C77;
+        font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,bold;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    .car__image img {
+        width: 400px;
+        height: 340px;
+    }
+
+    .car__text .eb_text {
+        font-size: 22px;
+    }
+
+    .car__text .dk_text {
+        padding-bottom: 0;
+        margin: 15px 0 25px;
+    }
+
+    .car__text .dk_text p {
+        font-size: 22px;
+    }
+
+    .car__text .car__btn p {
+        font-size: 22px;
+    }
+
+    .btn__car #white-button {
+        height: 55px;
+        width: 235px;
+    }
+
+    .btn__car .white a {
+        font-size: 20px;
+    }
+
+    .btn__car .green {
+        height: 55px;
+        width: 235px;
+
+    }
+
+    .btn__car .green a {
+        font-size: 24px;
+        margin: auto;
+    }
+
+    .car__btn {
+        margin-right: 140px;
+    }
+
+    .footer_t {
+        margin-top: -55px;
+    }
+    .footer__iner img {
+        width: 30px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1050px) {
+
+    /* MAIN PAGE */
+
+    .container{
+        width: 900px;
+    }
+
+    header .header-number {
+        display: none;
+    }
+
+    header .logo img {
+        width: 30px;
+    }
+
+    .works__cards {
+        margin-top: 70px;
+    }
+
+    .work__info {
+        margin-top: 40px;
+    }
+
+    .work__text {
+        width: 485px;
+    }
+
+    .work__text h1 {
+        font-size: 40px;
+    }
+
+    .work__text .info__text {
+        font-size: 40px;
+        font-size: 28px;
+    }
+
+    .work__image {
+        width: 320px;
+        height: 320px;
+    }
+
+    .card {
+        width: 32%;
+        height: 0px;
+    }
+
+    .main__container button a {
+        font-size: 14px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .info__section {
+        margin-top: 100px;
+    }
+
+    .info__section .one {
+        margin-top: 70px;
+    }
+
+    .info__section h2 {
+        font-size: 36px;
+    }
+
+    .info__section p {
+        font-size: 30px;
+    }
+
+    .info__section span {
+        font-size: 30px;
+    }
+
+    .result h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .result img {
+        width: 910px;
+        margin: 50px auto 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .event__icon h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .transition {
+        margin: 90px 50px 0;
+    }
+
+    .transition img {
+        width: 340px;
+        height: 240px;
+    }
+
+    .event__card img {
+        width: 120px;
+        margin: 0 20px 0 0;
+    }
+
+    .footer__iner img {
+        width: 36px;
+        height: 26px;
+    }
+
+    .video__item {
+        height: 750px;
+    }
+
+    /* CATALOG */
+
+    header .info {
+        margin-top: 10px;
+    }
+
+    .heder__next {
+        margin-bottom: 60px;
+    }
+
+    .order__card {
+        width: 200px;
+        height: 320px;
+        margin-bottom: 50px;
+    }
+
+    .order__card img {
+        width: 180px;
+    }
+
+    .order__card .card__mation {
+        width: 180px;
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .order__card .card__info {
+        width: 180px;
+    }
+
+    .order__card p {
+        font-size: 16px;
+    }
+
+    .order__card .card__info button {
+        font-size: 22px;
+        width: 180px;
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .order__card .card__info a {
+        font-size: 22px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    /* INFO */
+
+    .car__image img {
+        width: 400px;
+        height: 340px;
+    }
+
+    .car__text .eb_text {
+        font-size: 22px;
+    }
+
+    .car__text .dk_text {
+        padding-bottom: 0;
+        margin: 15px 0 25px;
+    }
+
+    .car__text .dk_text p {
+        font-size: 22px;
+    }
+
+    .car__text .car__btn p {
+        font-size: 22px;
+    }
+
+    .btn__car #white-button {
+        height: 55px;
+        width: 235px;
+    }
+
+    .btn__car .white a {
+        font-size: 20px;
+    }
+
+    .btn__car .green {
+        height: 55px;
+        width: 165px;
+        margin-left: 10px;
+    }
+
+    .btn__car .green a {
+        font-size: 24px;
+        margin: auto;
+    }
+    .footer_t {
+        margin-top: -55px;
+    }
+    .footer__iner img {
+        width: 30px;
+    }
+
+
+}
+
+/* ------------------------------------- */
+
+
+@media screen and (max-width: 950px) {
+
+    /* MAIN PAGE */
+
+    .container{
+        width: 850px;
+    }
+
+    header .header-number {
+        display: none;
+    }
+
+    header .logo img {
+        width: 30px;
+    }
+    .works__cards {
+        margin-top: 70px;
+    }
+
+    .work__info {
+        margin-top: 40px;
+    }
+
+    .work__text {
+        width: 485px;
+    }
+
+    .work__text h1 {
+        font-size: 40px;
+    }
+
+    .work__text .info__text {
+        font-size: 40px;
+        font-size: 28px;
+    }
+
+    .work__image {
+        width: 320px;
+        height: 320px;
+    }
+
+    .card {
+        width: 32%;
+    }
+
+    .main__container button a {
+        font-size: 16px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .info__section {
+        margin-top: 100px;
+    }
+
+    .info__section .one {
+        margin-top: 70px;
+    }
+
+    .info__section h2 {
+        font-size: 36px;
+    }
+
+    .info__section p {
+        font-size: 30px;
+    }
+
+    .info__section span {
+        font-size: 30px;
+    }
+
+    .result h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .result img {
+        width: 850px;
+        margin: 50px auto 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .event__icon h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .transition {
+        margin: 90px 50px 0;
+    }
+
+    .transition img {
+        width: 340px;
+        height: 240px;
+    }
+
+    .event__card img {
+        width: 120px;
+        margin: 0 20px 0 0;
+    }
+
+    .footer__iner img {
+        width: 36px;
+        height: 26px;
+    }
+
+    .video__item {
+        height: 700px;
+    }
+
+    /* CATALOG */
+
+    header .info {
+        margin-top: 10px;
+    }
+
+    .heder__next {
+        margin-bottom: 60px;
+    }
+
+    .order__card {
+        width: 200px;
+        height: 320px;
+        margin-bottom: 50px;
+    }
+
+    .order__card img {
+        width: 180px;
+    }
+
+    .order__card .card__mation {
+        width: 180px;
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .order__card .card__info {
+        width: 180px;
+    }
+
+    .order__card p {
+        font-size: 16px;
+    }
+
+    .order__card .card__info button {
+        font-size: 22px;
+        width: 180px;
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .order__card .card__info a {
+        font-size: 22px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    /* INFO */
+
+    .car__image img {
+        width: 400px;
+        height: 340px;
+    }
+
+    .car__text .eb_text {
+        font-size: 22px;
+    }
+
+    .car__text .dk_text {
+        padding-bottom: 0;
+        margin: 15px 0 25px;
+    }
+
+    .car__text .dk_text p {
+        font-size: 22px;
+    }
+
+    .car__text .car__btn p {
+        font-size: 22px;
+    }
+
+    .btn__car #white-button {
+        height: 55px;
+        width: 235px;
+    }
+
+    .btn__car .white a {
+        font-size: 20px;
+    }
+
+    .btn__car .green {
+        height: 55px;
+        width: 165px;
+    }
+
+    .btn__car .green a {
+        font-size: 24px;
+        margin: auto;
+    }
+
+    .footer_t {
+        margin-top: -55px;
+    }
+    .footer__iner img {
+        width: 30px;
+    }
+
+
+}
+/* ---------------------------------------------------- */
+
+@media screen and (max-width: 900px) {
+
+    /* MAIN PAGE */
+
+    .container{
+        width: 825px;
+    }
+
+    header .header-number {
+        display: none;
+    }
+
+    header .logo img {
+        width: 30px;
+    }
+
+    .video__item {
+        height: 640px;
+    }
+
+    .works__cards {
+        margin-top: 70px;
+    }
+
+    .work__info {
+        margin-top: 40px;
+    }
+
+    .work__text {
+        width: 485px;
+    }
+
+    .work__text h1 {
+        font-size: 40px;
+    }
+
+    .work__text .info__text {
+        font-size: 40px;
+        font-size: 28px;
+    }
+
+    .work__image {
+        width: 320px;
+        height: 320px;
+    }
+
+    .card {
+        width: 32%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .info__section {
+        margin-top: 100px;
+    }
+
+    .info__section .one {
+        margin-top: 70px;
+    }
+
+    .info__section h2 {
+        font-size: 36px;
+    }
+
+    .info__section p {
+        font-size: 30px;
+    }
+
+    .info__section span {
+        font-size: 30px;
+    }
+
+    .result h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .result img {
+        width: 740px;
+        margin: 50px auto 0;
+    }
+
+    .event__icon h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .transition {
+        margin: 90px 50px 0;
+    }
+
+    .transition img {
+        width: 340px;
+        height: 240px;
+    }
+
+    .event__card img {
+        width: 120px;
+        margin: 0 20px 0 0;
+    }
+
+    .footer__iner img {
+        width: 36px;
+        height: 26px;
+    }
+
+    /* CATALOG */
+
+    header .info {
+        margin-top: 10px;
+    }
+
+    .heder__next {
+        margin-bottom: 60px;
+    }
+
+    .order__card {
+        width: 180px;
+        height: 320px;
+        margin-bottom: 50px;
+    }
+
+    .order__card img {
+        width: 180px;
+    }
+
+    .order__card .card__mation {
+        width: 180px;
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .order__card .card__info {
+        width: 180px;
+    }
+
+    .order__card p {
+        font-size: 16px;
+    }
+
+    .order__card .card__info button {
+        font-size: 22px;
+        width: 180px;
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .order__card .card__info a {
+        font-size: 22px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    /* INFO */
+
+    .car__image img {
+        width: 400px;
+        height: 340px;
+    }
+
+    .car__text .eb_text {
+        font-size: 22px;
+    }
+
+    .car__text .dk_text {
+        padding-bottom: 0;
+        margin: 15px 0 25px;
+    }
+
+    .car__text .dk_text p {
+        font-size: 22px;
+    }
+
+    .car__text .car__btn p {
+        font-size: 22px;
+    }
+
+    .btn__car #white-button {
+        height: 55px;
+        width: 235px;
+    }
+
+    .btn__car .white a {
+        font-size: 20px;
+    }
+
+    .btn__car .green {
+        height: 55px;
+        width: 165px;
+    }
+
+    .btn__car .green a {
+        font-size: 24px;
+        margin: auto;
+    }
+
+    .footer_t {
+        margin-top: -55px;
+    }
+    .footer__iner img {
+        width: 30px;
+    }
+
+
+
+
+}
+
+/* ----------------------------------------------- */
+
+
+@media screen and (max-width: 850px) {
+
+    /* MAIN PAGE */
+
+    .container{
+        width: 800px;
+    }
+
+    header .header-number {
+        display: none;
+    }
+
+    header .logo img {
+        width: 30px;
+    }
+
+
+
+    .works__cards {
+        margin-top: 70px;
+    }
+
+    .work__info {
+        margin-top: 40px;
+    }
+
+    .work__text {
+        width: 485px;
+    }
+
+    .work__text h1 {
+        font-size: 40px;
+    }
+
+    .work__text .info__text {
+        font-size: 40px;
+        font-size: 28px;
+    }
+
+    .work__image {
+        width: 320px;
+        height: 320px;
+    }
+
+    .card {
+        width: 32%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .info__section {
+        margin-top: 100px;
+    }
+
+    .info__section .one {
+        margin-top: 70px;
+    }
+
+    .info__section h2 {
+        font-size: 36px;
+    }
+
+    .info__section p {
+        font-size: 30px;
+    }
+
+    .info__section span {
+        font-size: 30px;
+    }
+
+    .result h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .result img {
+        width: 740px;
+        margin: 50px auto 0;
+    }
+
+    .event__icon h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .transition {
+        margin: 90px 50px 0;
+    }
+
+    .transition img {
+        width: 340px;
+        height: 240px;
+    }
+
+    .event__card img {
+        width: 120px;
+        margin: 0 20px 0 0;
+    }
+
+    .footer__iner img {
+        width: 36px;
+        height: 26px;
+    }
+
+    /* CATALOG */
+
+    header .info {
+        margin-top: 10px;
+    }
+
+    .heder__next {
+        margin-bottom: 60px;
+    }
+
+    .order__card {
+        width: 180px;
+        height: 320px;
+        margin-bottom: 50px;
+    }
+
+    .order__card img {
+        width: 180px;
+    }
+
+    .order__card .card__mation {
+        width: 180px;
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .order__card .card__info {
+        width: 180px;
+    }
+
+    .order__card p {
+        font-size: 16px;
+    }
+
+    .order__card .card__info button {
+        font-size: 22px;
+        width: 180px;
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .order__card .card__info a {
+        font-size: 22px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    /* INFO */
+
+    .car__image img {
+        width: 395px;
+        height: 340px;
+    }
+
+    .car__text .eb_text {
+        font-size: 22px;
+    }
+
+    .car__text .dk_text {
+        padding-bottom: 0;
+        margin: 15px 0 25px;
+    }
+
+    .car__text .dk_text p {
+        font-size: 22px;
+    }
+
+    .car__text .car__btn p {
+        font-size: 22px;
+    }
+
+    .btn__car #white-button {
+        height: 55px;
+        width: 235px;
+    }
+
+    .btn__car .white a {
+        font-size: 20px;
+    }
+
+    .btn__car .green {
+        height: 55px;
+        width: 165px;
+    }
+
+    .btn__car .green a {
+        font-size: 24px;
+        margin: auto;
+    }
+
+    .footer__iner img {
+        width: 30px ;
+
+    }
+
+    .footer_t {
+        margin-top: -55px;
+    }
+
+
+}
+
+
+/* ----------------------------------------------- */
+
+
+
+@media screen and (max-width: 800px) {
+
+    /* MAIN PAGE */
+
+    .container{
+        width: 775px;
+    }
+
+    header .header-number {
+        display: none;
+    }
+
+    header .logo img {
+        width: 30px;
+    }
+
+
+
+    .works__cards {
+        margin-top: 70px;
+    }
+
+    .work__info {
+        margin-top: 40px;
+    }
+
+    .work__text {
+        width: 485px;
+    }
+
+    .work__text h1 {
+        font-size: 32px;
+    }
+
+    .work__text .info__text {
+        font-size: 30px;
+        font-size: 24px;
+    }
+
+    .work__image {
+        width: 320px;
+        height: 320px;
+    }
+
+    .card {
+        width: 32%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .info__section {
+        margin-top: 100px;
+    }
+
+    .info__section .one {
+        margin-top: 70px;
+    }
+
+    .info__section h2 {
+        font-size: 36px;
+    }
+
+    .info__section p {
+        font-size: 30px;
+    }
+
+    .info__section span {
+        font-size: 30px;
+    }
+
+    .result h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .result img {
+        width: 740px;
+        margin: 50px auto 0;
+    }
+
+    .event__icon h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .transition {
+        margin: 90px 50px 0;
+    }
+
+    .transition img {
+        width: 340px;
+        height: 240px;
+    }
+
+    .event__card img {
+        width: 120px;
+        margin: 0 20px 0 0;
+    }
+
+    .footer__iner img {
+        width: 36px;
+        height: 26px;
+    }
+
+    /* CATALOG */
+
+    header .info {
+        margin-top: 10px;
+    }
+
+    .heder__next {
+        margin-bottom: 60px;
+    }
+
+    .order__card {
+        width: 180px;
+        height: 320px;
+        margin-bottom: 50px;
+    }
+
+    .order__card img {
+        width: 180px;
+    }
+
+    .order__card .card__mation {
+        width: 180px;
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .order__card .card__info {
+        width: 180px;
+    }
+
+    .order__card p {
+        font-size: 16px;
+    }
+
+    .order__card .card__info button {
+        font-size: 22px;
+        width: 180px;
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .order__card .card__info a {
+        font-size: 22px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    /* INFO */
+
+    .car__image img {
+        width: 400px;
+        height: 340px;
+        margin-left: -50px;
+    }
+
+    .car__text .eb_text {
+        font-size: 22px;
+    }
+
+    .car__text .dk_text {
+        padding-bottom: 0;
+        margin: 15px 0 25px;
+    }
+
+    .car__text .dk_text p {
+        font-size: 22px;
+    }
+
+    .car__text .car__btn p {
+        font-size: 22px;
+    }
+
+    .btn__car #white-button {
+        height: 55px;
+        width: 235px;
+    }
+
+    .btn__car .white a {
+        font-size: 20px;
+    }
+
+    .btn__car .green {
+        height: 55px;
+        width: 165px;
+    }
+
+    .btn__car .green a {
+        font-size: 24px;
+        margin: auto;
+    }
+
+    .footer__iner img {
+        width: 30px ;
+
+    }
+
+    .footer_t {
+        margin-top: -55px;
+    }
+}
+
+/* --------------------------------- */
+
+
+@media screen and (max-width: 780px) {
+
+    /* MAIN PAGE */
+
+    .container{
+        width: 725px;
+    }
+
+    header .header-number {
+        display: none;
+    }
+
+    header .logo img {
+        width: 30px;
+    }
+
+
+    .works__cards {
+        margin-top: 70px;
+    }
+
+    .work__info {
+        margin-top: 40px;
+    }
+
+    .work__text {
+        width: 485px;
+    }
+
+    .work__text h1 {
+        font-size: 32px;
+    }
+
+    .work__text .info__text {
+        font-size: 30px;
+        font-size: 24px;
+    }
+
+    .work__image {
+        width: 320px;
+        height: 320px;
+    }
+
+    .card {
+        width: 38%;
+        margin: inherit;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .main__container button a {
+        font-size: 17px;
+    }
+
+    .info__section {
+        margin-top: 100px;
+    }
+
+    .info__section .one {
+        margin-top: 70px;
+    }
+
+    .info__section h2 {
+        font-size: 36px;
+    }
+
+    .info__section p {
+        font-size: 30px;
+    }
+
+    .info__section span {
+        font-size: 30px;
+    }
+
+    .result h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .result img {
+        width: 700px;
+        margin: 50px auto 0;
+    }
+
+    .event__icon h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .transition {
+        margin: 70px 35px 0;
+    }
+
+    .transition img {
+        width: 340px;
+        height: 240px;
+    }
+
+    .event__card img {
+        width: 120px;
+        margin: 0 20px 0 0;
+    }
+
+    .footer__iner img {
+        width: 36px;
+        height: 26px;
+    }
+
+    .video__item {
+        height: 610px;
+    }
+
+    /* CATALOG */
+
+    header .info {
+        margin-top: 10px;
+    }
+
+    .heder__next {
+        margin-bottom: 60px;
+    }
+
+    .order__card {
+        width: 200px;
+        height: 320px;
+        margin-bottom: 50px;
+    }
+
+    .order__card img {
+        width: 180px;
+    }
+
+    .order__card .card__mation {
+        width: 180px;
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .order__card .card__info {
+        width: 180px;
+    }
+
+    .order__card p {
+        font-size: 16px;
+    }
+
+    .order__card .card__info button {
+        font-size: 22px;
+        width: 180px;
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .order__card .card__info a {
+        font-size: 22px;
+    }
+
+    .footer  {
+        margin-top: 50px;
+    }
+
+    /* INFO */
+
+    .car__image img {
+        width: 370px;
+        height: 330px;
+    }
+
+    .car__text .eb_text {
+        font-size: 20px;
+    }
+
+    .car__text .dk_text {
+        padding-bottom: 0;
+        margin: 15px 0 25px;
+    }
+
+    .car__btn {
+        margin-right: auto;
+    }
+
+    .car__text .dk_text p {
+        font-size: 20px;
+    }
+
+    .car__text .car__btn p {
+        font-size: 20px;
+    }
+
+    .btn__car #white-button {
+        height: 48px;
+        width: 200px;
+    }
+
+    .btn__car .white a {
+        font-size: 20px;
+    }
+
+    .btn__car .green {
+        height: 48px;
+        width: 200px;
+    }
+
+    .btn__car .green a {
+        font-size: 20px;
+        margin: auto;
+    }
+
+    .footer__iner img {
+        width: 30px;
+    }
+
+    .footer_t {
+        margin-top: -55px;
+    }
+}
+
+/* ------------------------------------ */
+
+@media screen and (max-width: 730px) {
+
+    /* MAIN PAGE */
+
+    .container{
+        width: 650px;
+    }
+
+    header .header-number {
+        display: none;
+    }
+
+    header .logo img {
+        width: 30px;
+    }
+
+    .works__cards {
+        margin-top: 70px;
+    }
+
+    .work__info {
+        margin-top: 40px;
+    }
+
+    .work__text {
+        width: 485px;
+    }
+
+    .work__text h1 {
+        font-size: 32px;
+    }
+
+    .work__text .info__text {
+        font-size: 30px;
+        font-size: 24px;
+    }
+
+    .work__image {
+        width: 320px;
+        height: 320px;
+    }
+
+    .card {
+        width: 43%;
+        height: 400px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .main__container button a {
+        font-size: 16px;
+
+    }
+
+    .info__section {
+        margin-top: 100px;
+    }
+
+    .info__section .one {
+        margin-top: 70px;
+    }
+
+    .info__section h2 {
+        font-size: 36px;
+    }
+
+    .info__section p {
+        font-size: 30px;
+    }
+
+    .info__section span {
+        font-size: 30px;
+    }
+
+    .result h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .result img {
+        width: 650px;
+        margin: 50px auto 0;
+    }
+
+    .event__icon h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .transition {
+        margin: 70px 20px 0;
+    }
+
+    .transition img {
+        width: 340px;
+        height: 240px;
+    }
+
+    .event__card img {
+        width: 120px;
+        margin: 0 20px 0 0;
+    }
+
+    .footer__iner img {
+        width: 36px;
+        height: 26px;
+    }
+
+    .video__item {
+        height: 580px;
+    }
+
+    /* CATALOG */
+
+    header .info {
+        margin-top: 10px;
+    }
+
+    .heder__next {
+        margin-bottom: 60px;
+    }
+
+    .order__card {
+        width: 200px;
+        height: 320px;
+        margin-bottom: 50px;
+    }
+
+    .order__card img {
+        width: 180px;
+    }
+
+    .order__card .card__mation {
+        width: 180px;
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .order__card .card__info {
+        width: 180px;
+    }
+
+    .order__card p {
+        font-size: 16px;
+    }
+
+    .order__card .card__info button {
+        font-size: 22px;
+        width: 180px;
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .order__card .card__info a {
+        font-size: 22px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    /* INFO */
+
+    .car__image img {
+        width: 350px;
+        height: 310px;
+    }
+
+    .car__text .eb_text {
+        font-size: 18px;
+    }
+
+    .car__text .dk_text {
+        padding-bottom: 0;
+        margin: 15px 0 25px;
+    }
+
+    .car__btn {
+        margin-right: auto;
+    }
+
+    .car__text .dk_text p {
+        font-size: 18px;
+    }
+
+    .car__text .car__btn p {
+        font-size: 18px;
+    }
+
+    .btn__car #white-button {
+        height: 48px;
+        width: 170px;
+    }
+
+    .btn__car .white a {
+        font-size: 18px;
+    }
+
+    .btn__car .green {
+        height: 48px;
+        width: 170px;
+    }
+
+    .btn__car .green a {
+        font-size: 18px;
+        margin: auto;
+    }
+    .footer_t {
+        margin-top: -55px;
+    }
+
+    .footer__iner img {
+        width: 30px;
+    }
+}
+
+/* ------------------------------------ */
+
+@media screen and (max-width: 652px) {
+
+    /* MAIN PAGE */
+
+    .container{
+        width: 600px;
+    }
+
+    header .header-number {
+        display: none;
+    }
+
+    header .logo img {
+        width: 30px;
+    }
+
+
+    .works__cards {
+        margin-top: 70px;
+    }
+
+    .work__info {
+        margin-top: 40px;
+    }
+
+    .work__text {
+        width: 485px;
+    }
+
+    .work__text h1 {
+        font-size: 32px;
+    }
+
+    .work__text .info__text {
+        font-size: 30px;
+        font-size: 24px;
+    }
+
+    .work__image {
+        width: 320px;
+        height: 320px;
+    }
+
+    .card {
+        width: 40%;
+        height: 400px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .main__container button a {
+        font-size: 15px;
+    }
+
+    .info__section {
+        margin-top: 100px;
+    }
+
+    .info__section .one {
+        margin-top: 70px;
+    }
+
+    .info__section h2 {
+        font-size: 36px;
+    }
+
+    .info__section p {
+        font-size: 30px;
+    }
+
+    .info__section span {
+        font-size: 30px;
+    }
+
+    .result h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .result img {
+        width: 600px;
+        margin: 50px auto 0;
+    }
+
+    .event__icon h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .transition {
+        margin: 70px 20px 0;
+    }
+
+    .transition img {
+        width: 340px;
+        height: 240px;
+    }
+
+    .event__card img {
+        width: 120px;
+        margin: 0 20px 0 0;
+    }
+
+    .footer__iner img {
+        width: 36px;
+        height: 26px;
+    }
+
+    .video__item {
+        height: 555px;
+    }
+
+    /* CATALOG */
+
+    header .info {
+        margin-top: 10px;
+    }
+
+    .heder__next {
+        margin-bottom: 60px;
+    }
+
+    .order__card {
+        width: 200px;
+        height: 390px;
+        margin-bottom: 50px;
+    }
+
+    .order__card img {
+        width: 180px;
+    }
+
+    .order__card .card__mation {
+        width: 180px;
+        height: 210px;
+        margin-top: 0;
+    }
+
+    .order__card .card__info {
+        width: 180px;
+    }
+
+    .order__card p {
+        font-size: 16px;
+    }
+
+    .order__card .card__info button {
+        font-size: 22px;
+        width: 180px;
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .order__card .card__info a {
+        font-size: 22px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+
+    /* INFO */
+
+    .car__image img {
+        width: 350px;
+        height: 310px;
+    }
+
+    .car__text .eb_text {
+        font-size: 18px;
+    }
+
+    .car__text .dk_text {
+        padding-bottom: 0;
+        margin: 15px 0 25px;
+    }
+
+    .car__btn {
+        margin-right: auto;
+    }
+
+    .car__text .dk_text p {
+        font-size: 18px;
+    }
+
+    .car__text .car__btn p {
+        font-size: 18px;
+    }
+
+    .btn__car #white-button {
+        height: 45px;
+        width: 140px;
+    }
+
+    .btn__car .white a {
+        font-size: 18px;
+    }
+
+    .btn__car .green {
+        height: 45px;
+        width: 140px;
+    }
+
+    .btn__car .green a {
+        font-size: 18px;
+        margin: auto;
+    }
+    .footer_t {
+        margin-top: -15px;
+    }
+
+    .footer__iner img {
+        width: 30px;
+    }
+}
+
+/* ------------------------------------ */
+
+@media screen and (max-width: 600px) {
+
+    /* MAIN PAGE */
+
+    .container{
+        width: 550px;
+    }
+
+    header .header-number {
+        display: none;
+    }
+
+    header .logo img {
+        width: 30px;
+    }
+
+
+    .works__cards {
+        margin-top: 70px;
+    }
+
+    .work__info {
+        margin-top: 40px;
+    }
+
+    .work__text {
+        width: 485px;
+    }
+
+    .work__text h1 {
+        font-size: 32px;
+    }
+
+    .work__text .info__text {
+        font-size: 30px;
+        font-size: 24px;
+    }
+
+    .work__image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card {
+        width: 52%;
+        margin: inherit;
+    }
+
+
+    .card img {
+        width: 100%;
+    }
+
+    .main__container button a {
+        font-size: 15px;
+
+    }
+
+    .info__section {
+        margin-top: 100px;
+    }
+
+    .info__section .one {
+        margin-top: 50px;
+    }
+
+    .info__section h2 {
+        font-size: 36px;
+    }
+
+    .info__section p {
+        font-size: 30px;
+    }
+
+    .info__section span {
+        font-size: 30px;
+    }
+
+    .result h2 {
+        font-size: 33px;
+        margin-top: 100px;
+    }
+
+    .result img {
+        width: 540px;
+        margin: 50px auto 0;
+    }
+
+    .event__icon h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .transition {
+        margin: 70px 20px 0;
+    }
+
+    .transition img {
+        width: 375px;
+        height: 230px;
+    }
+
+    .event__card img {
+        width: 120px;
+        margin: 0 20px 0 0;
+    }
+
+    .footer__iner img {
+        width: 36px;
+        height: 26px;
+    }
+
+    .video__item {
+        height: 505px;
+    }
+
+    /* CATALOG */
+
+    header .info {
+        margin-top: 10px;
+    }
+
+    .heder__next {
+        margin-bottom: 60px;
+    }
+
+    .order__card {
+        width: 180px;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    .order__card img {
+        width: 180px;
+    }
+
+    .order__card .card__mation {
+        width: 180px;
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .order__card .card__info {
+        width: 180px;
+    }
+
+    .order__card p {
+        font-size: 16px;
+    }
+
+    .order__card .card__info button {
+        font-size: 22px;
+        width: 180px;
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .order__card .card__info a {
+        font-size: 22px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer__info p {
+        font-size: 13px;
+    }
+
+    /* INFO */
+
+    .car__image img {
+        width: 340px;
+        height: 300px;
+    }
+
+    .car__text .eb_text {
+        font-size: 15px;
+    }
+
+    .car__text .dk_text {
+        padding-bottom: 0;
+        margin: 15px 0 25px;
+    }
+
+    .car__btn {
+        margin-right: auto;
+    }
+
+    .car__text .dk_text p {
+        font-size: 15px;
+    }
+
+    .car__text .car__btn p {
+        font-size: 15px;
+    }
+
+    .btn__car #white-button {
+        height: 40px;
+        width: 130px;
+    }
+
+    .btn__car .white a {
+        font-size: 15px;
+    }
+
+    .btn__car .green {
+        height: 40px;
+        width: 125px;
+    }
+
+    .btn__car .green a {
+        font-size: 15px;
+        margin: auto;
+    }
+    .footer_t {
+        margin-top: -67px;
+    }
+
+    .footer__iner img {
+        width: 30px;
+    }
+}
+
+
+/* ------------------------------------ */
+
+
+@media screen and (max-width: 550px) {
+
+    /* MAIN PAGE */
+
+    .container{
+        width: 360px;
+    }
+
+    header .header-number {
+        display: none;
+    }
+
+    header .logo img {
+        width: 30px;
+    }
+
+    .works__cards {
+        margin-top: 70px;
+    }
+
+    .work__info {
+        margin-top: 40px;
+    }
+
+    .work__text {
+        width: 485px;
+    }
+
+    .work__text h1 {
+        font-size: 24px;
+    }
+
+    .work__text .info__text {
+        font-size: 12px;
+    }
+
+    .work__text .info__text span {
+        font-size: 12px;
+    }
+
+    .info__btn {
+        padding: 8px 20px;
+    }
+
+    .info__btn a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .work__image {
+        width: 140px;
+        height: 145px;
+    }
+
+    .main__box button a {
+        font-size: 20px;
+    }
+
+    .card {
+        display: flex;
+        height: 290px;
+        padding-top: 25px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        border-radius: 6px;
+        background: #F4F4F4;
+        margin-right: 38px;
+    }
+
+    .card img {
+        width: 190px;
+        height: 140px;
+        flex-shrink: 0;
+    }
+
+
+
+    .main__container {
+        margin-top: 50px;
+    }
+
+    .main__container button a {
+        color: #FFF;
+        font-family: Blinker,sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 132.5%;
+    }
+
+    .info__section {
+        margin-top: 100px;
+    }
+
+    .info__section .one {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .info__section h2 {
+        font-size: 22px;
+    }
+
+    .info__section p {
+        font-size: 30px;
+        font-size: 20px;
+    }
+
+    .info__section span {
+        font-size: 20px;
+
+    }
+
+    .result h2 {
+        font-size: 22px;
+        margin-top: 100px;
+    }
+
+    .result img {
+        width: 335px;
+        margin: 50px auto 0;
+    }
+
+    .event__icon h2 {
+        font-size: 22px;
+        margin-top: 100px;
+    }
+
+    .transition {
+        margin: 70px 20px 0;
+    }
+
+    .transition img {
+        width: 225px;
+        height: 140px;
+    }
+
+    .event__card img {
+        width: 80px;
+        margin: 0 20px -7px 8px;
+    }
+
+    .footer__iner img {
+        width: 25px;
+        height: 24px;
+    }
+
+    .footer__info p {
+        font-size: 12px;
+
+    }
+
+    .video__item {
+        height: 360px;
+    }
+
+    /* CATALOG */
+
+    header .info {
+        margin-top: 10px;
+    }
+
+    .heder__next {
+        margin-bottom: 60px;
+    }
+
+    .order__card {
+        width: 160px;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    .order__card img {
+        width: 180px;
+    }
+
+    .order__card .card__mation {
+        width: 180px;
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .order__card .card__info {
+        width: 180px;
+    }
+
+    .order__card p {
+        font-size: 16px;
+    }
+
+    .order__card .card__info button {
+        font-size: 22px;
+        width: 180px;
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .order__card .card__info a {
+        font-size: 22px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    /* INFO */
+    .car{
+        flex-wrap: wrap;
+    }
+    .btn__car {
+        flex-wrap: wrap;
+    }
+    .car__image img {
+        width: 300px;
+        height: 250px;
+        margin-left: 30px;
+    }
+    .car__image {
+        height: 280px;
+    }
+
+    .car__text .eb_text {
+        font-size: 22px;
+    }
+
+    .car__text .dk_text {
+        padding-bottom: 0;
+        margin: 15px 0 25px;
+    }
+
+    .car__text .dk_text p {
+        font-size: 22px;
+    }
+
+    .car__text .car__btn p {
+        font-size: 22px;
+    }
+
+    .btn__car #white-button {
+        height: 55px;
+        width: 330px;
+        margin-left: 9px;
+    }
+
+    .btn__car .white a {
+        font-size: 20px;
+    }
+
+    .btn__car .green {
+        height: 55px;
+        width: 330px;
+        margin-top: 15px;
+    }
+
+    .btn__car .green a {
+        font-size: 24px;
+        margin: auto;
+    }
+    .footer_t {
+        margin-top: 75px;
+    }
+    .footer__info p {
+        font-size: 13px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 410px) {
+
+    /* MAIN PAGE */
+
+    .container{
+        width: 350px;
+    }
+
+    header .header-number {
+        display: none;
+    }
+
+    header .logo img {
+        width: 30px;
+    }
+
+    .works__cards {
+        margin-top: 70px;
+    }
+
+    .work__info {
+        margin-top: 40px;
+    }
+
+    .work__text {
+        width: 485px;
+    }
+
+    .work__text h1 {
+        font-size: 24px;
+    }
+
+    .work__text .info__text {
+        font-size: 12px;
+    }
+
+    .work__text .info__text span {
+        font-size: 12px;
+    }
+
+    .info__btn {
+        padding: 8px 20px;
+    }
+
+    .info__btn a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .work__image {
+        width: 140px;
+        height: 145px;
+    }
+
+    .main__box button a {
+        font-size: 20px;
+    }
+
+    .card {
+        display: flex;
+        height: 290px;
+        padding-top: 25px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        border-radius: 6px;
+        background: #F4F4F4;
+        margin-right: 38px;
+    }
+    .card img {
+        width: 190px;
+        height: 140px;
+        flex-shrink: 0;
+    }
+
+    .main__container {
+        margin-top: 50px;
+    }
+
+    .main__container button a {
+        color: #FFF;
+        font-family: Blinker,sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 132.5%;
+    }
+
+    .info__section {
+        margin-top: 100px;
+    }
+
+    .info__section .one {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .info__section h2 {
+        font-size: 22px;
+    }
+
+    .info__section p {
+        font-size: 30px;
+        font-size: 20px;
+    }
+
+    .info__section span {
+        font-size: 20px;
+
+    }
+
+    .result h2 {
+        font-size: 22px;
+        margin-top: 100px;
+    }
+
+    .result img {
+        width: 335px;
+        margin: 50px auto 0;
+    }
+
+    .event__icon h2 {
+        font-size: 22px;
+        margin-top: 100px;
+    }
+
+    .transition {
+        margin: 70px 20px 0;
+    }
+
+    .transition img {
+        width: 225px;
+        height: 140px;
+    }
+
+    .event__card img {
+        width: 80px;
+        margin: 0 20px -7px 8px;
+    }
+
+    .footer__iner img {
+        width: 25px;
+        height: 24px;
+    }
+
+    .footer__info p {
+        font-size: 12px;
+
+    }
+
+    /* CATALOG */
+
+    header .info {
+        margin-top: 10px;
+    }
+
+    .heder__next {
+        margin-bottom: 60px;
+    }
+
+    .order__card {
+        width: 160px;
+        height: 300px;
+        margin-right: 5px;
+    }
+
+    .order__card img {
+        width: 180px;
+    }
+
+    .order__card .card__mation {
+        width: 180px;
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .order__card .card__info {
+        width: 180px;
+    }
+
+    .order__card p {
+        font-size: 16px;
+    }
+
+    .order__card .card__info button {
+        font-size: 22px;
+        width: 180px;
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .order__card .card__info a {
+        font-size: 22px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer__info p {
+        font-size: 13px;
+    }
+
+    /* INFO */
+    .car{
+        flex-wrap: wrap;
+    }
+    .btn__car {
+        flex-wrap: wrap;
+    }
+    .car__image img {
+        width: 300px;
+        height: 250px;
+        margin-left: 30px;
+    }
+    .car__image {
+        height: 280px;
+    }
+
+    .car__text .eb_text {
+        font-size: 22px;
+    }
+
+    .car__text .dk_text {
+        padding-bottom: 0;
+        margin: 15px 0 25px;
+    }
+
+    .car__text .dk_text p {
+        font-size: 22px;
+    }
+
+    .car__text .car__btn p {
+        font-size: 22px;
+    }
+
+    .btn__car #white-button {
+        height: 55px;
+        width: 330px;
+        margin-left: 9px;
+    }
+
+    .btn__car .white a {
+        font-size: 20px;
+    }
+
+    .btn__car .green {
+        height: 55px;
+        width: 330px;
+        margin-top: 15px;
+    }
+
+    .btn__car .green a {
+        font-size: 24px;
+        margin: auto;
+    }
+    .footer_t {
+        margin-top: 75px;
+    }
+    .footer__info p {
+        font-size: 13px;
+    }
+
+
+}
+
+
+.container {
+    position: relative;
+  }
+
+  .result {
+    position: relative;
+  }
+
+  .video__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+
+  .video__item video {
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+  }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROCLEANING</title>
+    <link rel="stylesheet" href="{% static 'products.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="info">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/static/images/Procleaning-Logo.png" alt="Логотип Procleaning">
+                    </a>
+                </div>
+                <div class="info__title">
+                    <a href="/#about"> О нас</a>
+                    <a href="/#catalog"> Каталог </a>
+                </div>
+                <div class="icon">
+                    <a href="tel:+996703813814" class="header-number">+996 703 81 38 14</a>
+                    <a href="https://wa.me/996703813814">
+                        <img src="/static/images/WhatsApp.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/procleaning.kg/">
+                        <img src="/static/images/instagram-Logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="heder__next">
+                <p>Главный экран</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M8.57812 16.0781L9.98438 17.4844L15.9844 11.4844L9.98438 5.48438L8.57812 6.89062L13.1719 11.4844L8.57812 16.0781Z" fill="#2B2B2B"/>
+                </svg>
+                <p>Каталог</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="card__container">
+                {% for card in cards %}
+                    <div class="order__card">
+                        <div class="card__mation">
+                            <div class="circle"></div>
+                            <img src="/media/{{ card.photo }}" alt="">
+                        </div>
+                        <div class="card__info">
+                            <p>{{ card.name }}</p>
+                            <button><a href="info.html">Подробнее</a></button>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer__iner">
+                    <a href="/">
+                        <img src="/static/images/Procleaning-Logo.png" alt="">
+                    </a>
+                </div>
+                <div class="footer__info">
+                    <p>Телефон</p>
+                    <a href="tel:+996703813814">
+                        <p>+996 703 81 38 14</p>
+                    </a>
+                </div>
+                <div class="footer__info">
+                    <p>Электронная почта</p>
+                    <a href="mailto:Tcl82@mail.ru">
+                        <p>Tcl82@mail.ru</p>
+                    </a>
+                </div>
+                <div class="footer__info">
+                    <a href="https://wa.me/996703813814">
+                        <img src="/static/images/WhatsApp.svg" alt="">
+                    </a>
+
+                    <a href="https://www.instagram.com/procleaning.kg/">
+                        <img src="/static/images/instagram-Logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

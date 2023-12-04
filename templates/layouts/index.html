@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'products.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROCLEANING</title>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="info">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/static/images/Procleaning-Logo.png" alt="Логотип Procleaning">
+                    </a>
+                </div>
+                <div class="info__title">
+                    <a href="#about"> О нас</a>
+                    <a href="#catalog"> Каталог </a>
+                </div>
+                <div class="icon">
+                    <a href="tel:+996703813814" class="header-number">+996 703 81 38 14</a>
+                    <a href="https://wa.me/996703813814">
+                        <img src="/static/images/WhatsApp.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/procleaning.kg/">
+                        <img src="/static/images/instagram-Logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="work__info">
+            <div class="container">
+                <div class="main__box">
+                    <div class="work__text">
+                        <h1 class="title">PROCLEANING</h1>
+                        <p class="info__text">Официальный дистрибьютор в Кыргызстане итальянского производителя профессиональной клининговой техники <span class="eureka">"EUREKA"</span></p>
+                        <button class="info__btn"><a href="">Подробнее</a></button>
+                    </div>
+
+                    <div>
+                        <img class="work__image" src="/static/images/Frame%205.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="catalog" class="works__cards">
+            <div class="container">
+                <div class="main__container">
+                    {% for machine in machines %}
+                        <div class="card">
+                            <img src="/media/{{ machine.photo }}" alt="">
+                            <button class="card__btn">
+                                <a href="{% url 'category_page' machine.id %}">{{ machine.name }}</a>
+                            </button>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------------------------- -->
+
+        <section id="about" class="compani">
+            <div class="container">
+                <div class="information">
+                    <div class="info__section">
+                        <h2>О КОМПАНИИ</h2>
+                        <p class="one"><span>Eureka</span> это известный итальянский производитель профессиональной техники для уборки разных типов полов.</p>
+                        <p class="two">Компания основана в 1986 году и на сегодняшний день заслужила мировое признание как один из лучших производителей поломоечных и подметальных машин.</p>
+                        <p class="thre">Наша выигрышная комбинация –многолетний опыт итальянских инженеров в сочетании с внутренним производством <span>100% MADE IN ITALY.</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="result">
+                    <h2>НАГЛЯДНЫЙ ПРИМЕР РАБОТЫ</h2>
+                    <img src="/static/images/Group%202.png" alt="">
+                    <div class="video__item">
+                        <video src="{% static 'video1.mp4' %}" controls></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="transition">
+                    <img src="/static/images/11.jpg" alt="">
+                    <img src="/static/images/22.jpg" alt="">
+                    <img src="/static/images/33.jpg" alt="">
+                    <img src="/static/images/44.jpg" alt="">
+                    <img src="/static/images/55.jpg" alt="">
+                    <img src="/static/images/66.jpg" alt="">
+                    <img src="/static/images/77.jpg" alt="">
+                    <img src="/static/images/88.jpg" alt="">
+                    <img src="/static/images/99.jpg" alt="">
+                    <img src="/static/images/1010.jpg" alt="">
+                </div>
+                <div class="event__icon">
+                    <h2>НАШИ ДОВОЛЬНЫЕ КЛИЕНТЫ</h2>
+                </div>
+                <div class="event__card">
+                    <img src="/static/images/cum.png" alt="">
+                    <img src="/static/images/cum.png" alt="">
+                    <img src="/static/images/cum.png" alt="">
+                    <img src="/static/images/cum.png" alt="">
+                    <img src="/static/images/cum.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer__iner">
+                    <a href="">
+                        <img src="/static/images/Procleaning-Logo.png" alt="">
+                    </a>
+                </div>
+                <div class="footer__info">
+                    <p>Телефон</p>
+                    <a href="tel:+996703813814">
+                        <p>+996 703 81 38 14</p>
+                    </a>
+                </div>
+                <div class="footer__info">
+                    <p>Электронная почта</p>
+                    <a href="mailto:Tcl82@mail.ru">
+                        <p>Tcl82@mail.ru</p>
+                    </a>
+                </div>
+                <div class="footer__info">
+                    <a href="https://wa.me/996703813814">
+                        <img src="/static/images/WhatsApp.svg" alt="">
+                    </a>
+
+                    <a href="https://www.instagram.com/procleaning.kg/">
+                        <img src="/static/images/instagram-Logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>
