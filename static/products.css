@@ -263,7 +263,6 @@ html {
     margin-top: 60px;
     display: flex;
     justify-content: center;
-
     overflow-x: scroll;
     white-space: nowrap;
     margin-top: 88px;
@@ -381,7 +380,7 @@ html {
 .car {
     display: flex;
     margin-top: 70px;
-
+    margin-bottom: 100px;
 }
 
 .car__image {
@@ -2541,6 +2540,13 @@ html {
     .transition img {
         width: 375px;
         height: 230px;
+    }
+
+    .event__card {
+        margin-top: 54px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: flex-start;
     }
 
     .event__card img {

@@ -30,42 +30,51 @@
                     </a>
                 </div>
             </div>
-            <div class="heder__next">
-                <p>Главный экран</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M8.57812 16.0781L9.98438 17.4844L15.9844 11.4844L9.98438 5.48438L8.57812 6.89062L13.1719 11.4844L8.57812 16.0781Z" fill="#2B2B2B"/>
-                </svg>
-                <p>Каталог</p>
-            </div>
         </div>
     </header>
     <main>
         <section>
             <div class="container">
-                <div class="card__container">
-                {% for card in cards %}
-                    <div class="order__card">
-                        <div class="card__mation">
-                            <div class="circle"></div>
-                            <img src="/media/{{ card.photo }}" alt="">
-                        </div>
-                        <div class="card__info">
-                            <p>{{ card.name }}</p>
-                            <button><a href="{% url 'category_page' category_id=card.category.pk %}{{ card.id }}">Подробнее</a></button>
-                        </div>
+                <div class="car">
+                    {% for card in cards %}
+                    <div class="car__image">
+                        <img src="/media/{{ card.photo_2 }}" alt="">
                     </div>
-                {% endfor %}
+                    <div class="car__text">
+                        <div class="car__btn">
+                            <p class="tg__text">
+                                -{{ card.in_stock }}-
+                            </p>
+
+                            <p class="eb_text">
+                                {{ card.name_2 }}
+                            </p>
+
+                            <div class="dk_text">
+                                <p>
+                                    {{ card.info }}
+                                </p>
+                            </div>
+                          
+                            <p>
+                                {{ card.info_2 }}
+                            </p>
+                            <div class="btn__car">
+                                <button class="white" id="white-button"><a href="{{ card.video_link }}" class="white">Посмотреть видео</a></button>
+                                <button class="green"><a href="tel:+996703813814" class="green">Связатся</a></button>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <div class="footer">
+            <div class="footer_t">
                 <div class="footer__iner">
-                    <a href="/">
-                        <img src="/static/images/Procleaning-Logo.png" alt="">
-                    </a>
+                    
                 </div>
                 <div class="footer__info">
                     <p>Телефон</p>
@@ -80,12 +89,12 @@
                     </a>
                 </div>
                 <div class="footer__info">
-                    <a href="https://wa.me/996703813814">
-                        <img src="/static/images/WhatsApp.svg" alt="">
+                    <a href="">
+
                     </a>
 
-                    <a href="https://www.instagram.com/procleaning.kg/">
-                        <img src="/static/images/instagram-Logo.svg" alt="">
+                    <a href="">
+
                     </a>
                 </div>
             </div>

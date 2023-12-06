@@ -13,3 +13,9 @@ def machine_page_view(request, category_id):
         cards = Machines.objects.filter(category=category)
         context = {'cards': cards}
         return render(request, 'products/second.html', context=context)
+
+def machine_detail_view(request, category_id, id):
+    if request.method == 'GET':
+        cards = Machines.objects.get(id=id)
+        context = {'cards': [cards]}
+        return render(request, 'products/info.html', context=context)
