@@ -36,40 +36,36 @@
         <section>
             <div class="container">
                 <div class="car">
-                    {% for card in cards %}
                     <div class="car__image">
-                        <img src="/media/{{ card.photo_2 }}" alt="">
+                        <img src="/media/{{ cards.photo_2 }}" alt="">
                     </div>
                     <div class="car__text">
                         <div class="car__btn">
                             <p class="tg__text">
-                                -{{ card.in_stock }}-
+                                -{{ cards.in_stock }}-
                             </p>
-
                             <p class="eb_text">
-                                {{ card.name_2 }}
+                                {{ cards.name_2 }}
                             </p>
-
                             <div class="dk_text">
                                 <p>
-                                    {{ card.info }}
+                                    {{ cards.info }}
                                 </p>
                             </div>
-                          
                             <p>
-                                {{ card.info_2 }}
+                                {{ cards.info_2 }}
                             </p>
                             <div class="btn__car">
-                                <button class="white" id="white-button"><a href="{{ card.video_link }}" class="white">Посмотреть видео</a></button>
-                                <button class="green"><a href="tel:+996703813814" class="green">Связатся</a></button>
+                                <button class="white" id="white-button"><a href="{{ cards.video_link }}" class="white">Посмотреть видео</a></button>
+                                <button class="green"><a href="tel:+996703813814" class="green">Связаться</a></button>
                             </div>
                         </div>
-                    {% endfor %}
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="container">
             <div class="footer_t">

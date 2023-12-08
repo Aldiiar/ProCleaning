@@ -1,21 +1,29 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404
+from django.views.generic import ListView, DetailView
 from .models import Category_of_Machine, Machines
 
-def main_page_view(request):
-    if request.method == 'GET':
-        machines = Category_of_Machine.objects.all()
-        context = {'machines': machines}
-        return render(request, 'layouts/index.html', context=context)
 
-def machine_page_view(request, category_id):
-    if request.method == 'GET':
-        category = get_object_or_404(Category_of_Machine, pk=category_id)
-        cards = Machines.objects.filter(category=category)
-        context = {'cards': cards}
-        return render(request, 'products/second.html', context=context)
+class MainPageView(ListView):
+    model = Category_of_Machine
+    template_name = 'layouts/index.html'
+    context_object_name = 'machines'
 
-def machine_detail_view(request, category_id, id):
-    if request.method == 'GET':
-        cards = Machines.objects.get(id=id)
-        context = {'cards': [cards]}
-        return render(request, 'products/info.html', context=context)
+
+class MachinePageView(ListView):
+    model = Machines
+    template_name = 'products/second.html'
+    context_object_name = 'cards'
+
+    def get_queryset(self):
+        category = get_object_or_404(Category_of_Machine, pk=self.kwargs['category_id'])
+        return Machines.objects.filter(category=category)
+
+
+class MachineDetailView(DetailView):
+    model = Machines
+    template_name = 'products/info.html'
+    context_object_name = 'cards'
+
+    def get_object(self, queryset=None):
+        category = get_object_or_404(Category_of_Machine, pk=self.kwargs['category_id'])
+        return get_object_or_404(Machines, id=self.kwargs['id'], category=category)

@@ -18,7 +18,7 @@ class Machines(models.Model):
     name = models.CharField(max_length=500, blank=False, null=False)
     name_2 = models.CharField(max_length=500, blank=False, null=False, default='')
     info = models.TextField(blank=False, null=False, default='')
-    info_2 = models.TextField(blank=False, null=False, default='')
+    info_2 = models.TextField(blank=True, null=True)
     photo = models.ImageField(blank=False, null=False)
     photo_2 = models.ImageField(blank=True, null=True)
     in_stock = models.CharField(max_length=20, choices=IN_STOCK_CHOICES)
