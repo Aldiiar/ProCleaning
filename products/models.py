@@ -22,7 +22,7 @@ class Machines(models.Model):
     photo = models.ImageField(blank=False, null=False)
     photo_2 = models.ImageField(blank=True, null=True)
     in_stock = models.CharField(max_length=20, choices=IN_STOCK_CHOICES)
-    video_link = models.TextField(blank=False, null=False, default='')
+    video_link = models.TextField(blank=True, null=True)
     created_date = models.DateField(auto_now_add=True)
     category = models.ForeignKey(Category_of_Machine, on_delete=models.CASCADE, null=True, blank=True)
 

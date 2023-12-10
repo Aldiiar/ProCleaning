@@ -200,6 +200,16 @@ html {
     line-height: 132.5%;
 }
 
+.info__section a {
+    text-decoration: none;
+    color: #009C77;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 132.5%;
+}
+
 .one {
     margin-top: 60px;
 }
@@ -371,10 +381,15 @@ html {
 
 }
 
-.card__container{
-    justify-content: space-between;
+.card__container {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
+}
+
+.order__card {
+    margin-right: 40px; /* Установите желаемый отступ между карточками */
+    margin-bottom: 20px; /* Установите желаемый отступ между строками карточек */
 }
 
 .car {
@@ -597,7 +612,7 @@ html {
     }
 
     .order__card {
-        width: 260px;
+        width: 200px;
         height: 320px;
         margin-bottom: 50px;
     }
@@ -2345,7 +2360,7 @@ html {
 
     .order__card {
         width: 200px;
-        height: 390px;
+        height: 322px;
         margin-bottom: 50px;
     }
 
@@ -2445,7 +2460,7 @@ html {
     /* MAIN PAGE */
 
     .container{
-        width: 550px;
+        width: 590px;
     }
 
     header .header-number {
@@ -2565,6 +2580,10 @@ html {
 
     /* CATALOG */
 
+    .card__container {
+        justify-content: center;
+    }
+
     header .info {
         margin-top: 10px;
     }
@@ -2680,7 +2699,7 @@ html {
     /* MAIN PAGE */
 
     .container{
-        width: 360px;
+        width: 400px;
     }
 
     header .header-number {
@@ -2833,6 +2852,10 @@ html {
     }
 
     /* CATALOG */
+
+    .card__container {
+        justify-content: space-between;
+    }
 
     header .info {
         margin-top: 10px;
@@ -3096,6 +3119,10 @@ html {
     }
 
     /* CATALOG */
+
+    .card__container {
+        justify-content: space-between;
+    }
 
     header .info {
         margin-top: 10px;
