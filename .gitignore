@@ -4,3 +4,4 @@ venv/
 .env
 /static_root/
 /media/
+**/migrations
