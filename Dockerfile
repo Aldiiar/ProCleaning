@@ -15,16 +15,16 @@ COPY .env /app/.env
 RUN chown app:app /app/.env
 USER app
 
+# Создаем и настраиваем рабочую директорию
+WORKDIR /app
+RUN mkdir /app/static && mkdir /app/media && chown -R app:app /app
+
 # Устанавливаем базовые переменные среды
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # Экспозируем порт 80
 EXPOSE 80
-
-# Создаем и настраиваем рабочую директорию
-WORKDIR /app
-RUN mkdir /app/static && mkdir /app/media && chown -R app:app /app
 
 # Копируем файл зависимостей и устанавливаем их
 COPY ./requirements.txt /app/
