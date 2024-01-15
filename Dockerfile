@@ -26,7 +26,7 @@ RUN pip install -r requirements.txt
 
 # Копируем остальные файлы проекта
 COPY wait-for-it.sh /app/wait-for-it.sh
-COPY . /app/
+RUN chmod +x /app/wait-for-it.sh
 
 # Собираем статические файлы Django
 RUN python manage.py collectstatic --noinput
