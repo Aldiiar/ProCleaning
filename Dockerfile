@@ -6,6 +6,9 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+COPY .env /app/.env
+RUN chown app:app /app/.env
+
 # Создаем пользователя и группу "app"
 RUN groupadd -r app && useradd --no-log-init -r -g app app
 
