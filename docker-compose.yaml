@@ -22,9 +22,6 @@ services:
     environment:
       - VIRTUAL_HOST=${ALLOWED_HOST}
       - LETSENCRYPT_HOST=${ALLOWED_HOST}
-#      DJANGO_SUPERUSER_USERNAME: ${DJANGO_SUPERUSER_USERNAME}
-#      DJANGO_SUPERUSER_EMAIL: ${DJANGO_SUPERUSER_EMAIL}
-#      DJANGO_SUPERUSER_PASSWORD: ${DJANGO_SUPERUSER_PASSWORD}
     ports:
       - "8080:80"
     env_file:
@@ -34,11 +31,6 @@ services:
     volumes:
       - static_volume:/app/static
       - media_volume:/app/media
-    command: > 
-      /bin/sh -c "
-      /app/wait-for-it.sh db:5432 -- python manage.py makemigrations &&
-      python manage.py migrate &&
-      python manage.py runserver 0.0.0.0:80"
   nginx:
     build:
       dockerfile: ./Dockerfile
