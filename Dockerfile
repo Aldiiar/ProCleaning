@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN addgroup --system app && adduser --no-log-init -r -g app app
+RUN addgroup --system app && adduser --disabled-password --system --no-create-home --ingroup app app
 
 COPY .env /app/.env
 RUN chown app:app /app/.env
