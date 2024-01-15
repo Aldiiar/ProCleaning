@@ -44,6 +44,9 @@ services:
     container_name: app_nginx
     image: app_nginx
     volumes:
+      - www-html:/var/www/html
+      - ./nginx-conf.d:/etc/nginx/conf.d
+      - etc-letsencrypt:/etc/letsencrypt
       - static_volume:/app/static
       - media_volume:/app/media
     depends_on:
@@ -52,8 +55,19 @@ services:
       - .env
     ports:
       - "${NGINX_EXTERNAL_PORT}:80"
+  certbot:
+    image: certbot/certbot
+    depends_on:
+      - nginx
+    container_name: certbot
+    volumes:
+      - etc-letsencrypt:/etc/letsencrypt
+      - www-html:/var/www/html
+    command: certonly --webroot --webroot-path=/var/www/html --email aldiarm27@gmail.com --agree-tos --no-eff-email
 
 
 volumes:
   static_volume:
   media_volume:
+  www-html:
+  etc-letsencrypt:
