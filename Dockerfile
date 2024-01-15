@@ -2,12 +2,20 @@ FROM python:3.9
 
 SHELL ["/bin/bash", "-c"]
 
+# Установка Certbot и Nginx
+RUN apt-get update && \
+    apt-get install -y nginx certbot python3-certbot-nginx && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
 # Создаем пользователя и группу "app"
 RUN groupadd -r app && useradd --no-log-init -r -g app app
 
 # Устанавливаем базовые переменные среды
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
+
+EXPOSE 80
 
 # Создаем и настраиваем рабочую директорию
 WORKDIR /app
