@@ -1,7 +1,5 @@
 FROM python:3.9
 
-SHELL ["/bin/bash", "-c"]
-
 # Установка Certbot и Nginx
 RUN apt-get update && \
     apt-get install -y nginx certbot python3-certbot-nginx && \
@@ -19,7 +17,7 @@ EXPOSE 80
 
 # Создаем и настраиваем рабочую директорию
 WORKDIR /app
-RUN mkdir /app/static && mkdir /app/media && chown -R app:app /app && chmod 755 /app
+RUN mkdir /app/static && mkdir /app/media && chown -R app:app /app
 
 # Копируем файл зависимостей и устанавливаем их
 COPY ./requirements.txt /app/
@@ -38,8 +36,7 @@ RUN python manage.py collectstatic --noinput
 
 # Устанавливаем права доступа для пользователя app
 RUN chown -R app:app /app
-RUN chown -R app:app /app/static
-RUN chown -R app:app /app/media
+RUN chmod 755 /app
 
 # Пользователь app переключается на работу внутри контейнера
 USER app
