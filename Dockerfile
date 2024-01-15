@@ -10,7 +10,7 @@ COPY .env /app/.env
 RUN chown app:app /app/.env
 
 # Создаем пользователя и группу "app"
-RUN groupadd -r app && useradd --no-log-init -r -g app app
+RUN addgroup --system app && adduser --no-log-init -r -g app app
 
 # Устанавливаем базовые переменные среды
 ENV PYTHONDONTWRITEBYTECODE 1
