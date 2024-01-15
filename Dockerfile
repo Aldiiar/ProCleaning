@@ -1,7 +1,6 @@
-# Используем базовый образ python:3.9-slim
-FROM python:3.9-slim
+FROM python:3.9
 
-# Устанавливаем Certbot и Nginx
+# Установка Certbot и Nginx
 RUN apt-get update && \
     apt-get install -y nginx certbot python3-certbot-nginx && \
     apt-get clean && \
@@ -10,28 +9,26 @@ RUN apt-get update && \
 # Создаем пользователя и группу "app"
 RUN addgroup --system app && adduser --disabled-password --system --no-create-home --ingroup app app
 
-# Копируем .env файл и устанавливаем права доступа
+# Копируем .env и устанавливаем права
 COPY .env /app/.env
-RUN chown app:app /app/.env
+RUN chown app:app /app/.env && chmod 644 /app/.env
 
 # Устанавливаем базовые переменные среды
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-# Определяем порт, который будет использоваться приложением
 EXPOSE 80
 
 # Создаем и настраиваем рабочую директорию
 WORKDIR /app
-RUN mkdir /app/static /app/media && chown -R app:app /app
+RUN mkdir /app/static && mkdir /app/media && chown -R app:app /app
 
 # Копируем файл зависимостей и устанавливаем их
 COPY ./requirements.txt /app/
 RUN pip install --no-cache-dir -r /app/requirements.txt
 
 # Устанавливаем дополнительные зависимости
-RUN apt-get update && apt-get -qy install gcc libjpeg-dev \
-    libpq-dev libmariadb-dev-compat gettext cron openssh-client flake8 vim && apt-get clean
+RUN apt-get update && apt-get -qy install gcc libjpeg-dev libpq-dev libmariadb-dev-compat gettext cron openssh-client flake8 vim && apt-get clean
 
 # Копируем остальные файлы проекта
 COPY wait-for-it.sh /app/wait-for-it.sh
@@ -42,3 +39,10 @@ RUN python manage.py collectstatic --noinput
 
 # Пользователь app переключается на работу внутри контейнера
 USER app
+
+# Устанавливаем права доступа для пользователя app
+RUN chown -R app:app /app
+RUN chmod 755 /app
+
+# Команда для запуска приложения
+CMD ["gunicorn", "ProCleaning.wsgi:application", "-b", "0.0.0.0:80", "--chdir", "/app"]
