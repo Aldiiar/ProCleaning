@@ -1,22 +1,24 @@
+# Используем базовый образ Python 3.9
 FROM python:3.9
 
-# Установка Certbot и Nginx
+# Устанавливаем Certbot и Nginx
 RUN apt-get update && \
     apt-get install -y nginx certbot python3-certbot-nginx && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Создаем пользователя и группу "app"
+# Создаем системного пользователя app
 RUN addgroup --system app && adduser --disabled-password --system --no-create-home --ingroup app app
 
-# Копируем .env и устанавливаем права
+# Копируем файл .env и устанавливаем права доступа
 COPY .env /app/.env
-RUN chown app:app /app/.env && chmod 644 /app/.env
+RUN chown app:app /app/.env
 
 # Устанавливаем базовые переменные среды
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
+# Экспозируем порт 80
 EXPOSE 80
 
 # Создаем и настраиваем рабочую директорию
@@ -28,7 +30,8 @@ COPY ./requirements.txt /app/
 RUN pip install --no-cache-dir -r /app/requirements.txt
 
 # Устанавливаем дополнительные зависимости
-RUN apt-get update && apt-get -qy install gcc libjpeg-dev libpq-dev libmariadb-dev-compat gettext cron openssh-client flake8 vim && apt-get clean
+RUN apt-get update && apt-get -qy install gcc libjpeg-dev \
+    libpq-dev libmariadb-dev-compat gettext cron openssh-client flake8 vim && apt-get clean
 
 # Копируем остальные файлы проекта
 COPY wait-for-it.sh /app/wait-for-it.sh
@@ -40,9 +43,5 @@ RUN python manage.py collectstatic --noinput
 # Пользователь app переключается на работу внутри контейнера
 USER app
 
-# Устанавливаем права доступа для пользователя app
-RUN chown -R app:app /app
-RUN chmod 755 /app
-
-# Команда для запуска приложения
+# Запускаем Gunicorn для обслуживания Django приложения
 CMD ["gunicorn", "ProCleaning.wsgi:application", "-b", "0.0.0.0:80", "--chdir", "/app"]
