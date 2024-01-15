@@ -13,6 +13,7 @@ RUN addgroup --system app && adduser --disabled-password --system --no-create-ho
 # Копируем файл .env и устанавливаем права доступа
 COPY .env /app/.env
 RUN chown app:app /app/.env
+USER app
 
 # Устанавливаем базовые переменные среды
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -39,9 +40,6 @@ COPY . /app/
 
 # Собираем статические файлы Django
 RUN python manage.py collectstatic --noinput
-
-# Пользователь app переключается на работу внутри контейнера
-USER app
 
 # Запускаем Gunicorn для обслуживания Django приложения
 CMD ["gunicorn", "ProCleaning.wsgi:application", "-b", "0.0.0.0:80", "--chdir", "/app"]
