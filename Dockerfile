@@ -37,9 +37,5 @@ COPY . /app/
 # Собираем статические файлы Django
 RUN python manage.py collectstatic --noinput
 
-# Устанавливаем права доступа для пользователя app
-RUN chown -R app:app /app
-RUN chmod 755 /app
-
 # Пользователь app переключается на работу внутри контейнера
 USER app
