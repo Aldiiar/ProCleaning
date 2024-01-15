@@ -1,3 +1,8 @@
-FROM jwilder/nginx-proxy:1.2
+FROM nginx:latest
 
-COPY default_location /etc/nginx/vhost.d/default_location
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d
+COPY proxy_params /etc/nginx
+
+# Копируем статические файлы из контейнера с Django
+COPY --from=procleaning-web /app/static_root /app/static_root
