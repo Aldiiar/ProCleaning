@@ -6,11 +6,11 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+RUN addgroup --system app && adduser --no-log-init -r -g app app
+
 COPY .env /app/.env
 RUN chown app:app /app/.env
 
-# Создаем пользователя и группу "app"
-RUN addgroup --system app && adduser --no-log-init -r -g app app
 
 # Устанавливаем базовые переменные среды
 ENV PYTHONDONTWRITEBYTECODE 1
