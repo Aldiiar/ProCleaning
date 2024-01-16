@@ -56,15 +56,15 @@ services:
     ports:
       - "${NGINX_EXTERNAL_PORT}:80"
       - "${NGINX_EXTERNAL_SSL_PORT}:443"
-  certbot:
-    image: certbot/certbot
-    depends_on:
-      - nginx
-    container_name: certbot
-    volumes:
-      - etc-letsencrypt:/etc/letsencrypt
-      - www-html:/var/www/html
-    command: certonly --standalone --email aldiarm27@gmail.com --agree-tos --no-eff-email -d procleaning.kg
+#  certbot:
+#    image: certbot/certbot
+#    depends_on:
+#      - nginx
+#    container_name: certbot
+#    volumes:
+#      - etc-letsencrypt:/etc/letsencrypt
+#      - www-html:/var/www/html
+#    command: certonly --standalone --email aldiarm27@gmail.com --agree-tos --no-eff-email -d procleaning.kg
 
 
 volumes:
