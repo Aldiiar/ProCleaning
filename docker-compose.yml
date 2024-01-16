@@ -63,7 +63,7 @@ services:
     volumes:
       - etc-letsencrypt:/etc/letsencrypt
       - www-html:/var/www/html
-    command: certonly --webroot --webroot-path=/var/www/html --email aldiarm27@gmail.com --agree-tos --no-eff-email
+    command: certonly --webroot --webroot-path=/var/www/html --email aldiarm27@gmail.com --agree-tos --no-eff-email -d procleaning.kg -d www.procleaning.kg
 
 
 volumes:
