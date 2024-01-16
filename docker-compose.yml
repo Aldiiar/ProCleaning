@@ -44,9 +44,7 @@ services:
     container_name: app_nginx
     image: app_nginx
     volumes:
-      - www-html:/var/www/html
       - /docker/nginx:/etc/nginx/conf.d
-      - etc-letsencrypt:/etc/letsencrypt
       - static_volume:/app/static
       - media_volume:/app/media
     depends_on:
@@ -69,5 +67,5 @@ services:
 volumes:
   static_volume:
   media_volume:
-  www-html:
-  etc-letsencrypt:
+#  www-html:
+#  etc-letsencrypt:
