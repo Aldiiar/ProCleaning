@@ -44,7 +44,6 @@ services:
     container_name: app_nginx
     image: app_nginx
     volumes:
-      - /docker/nginx:/etc/nginx/conf.d
       - static_volume:/app/static
       - media_volume:/app/media
     depends_on:
