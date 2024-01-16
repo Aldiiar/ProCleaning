@@ -69,5 +69,5 @@ services:
 volumes:
   static_volume:
   media_volume:
-#  www-html:
-#  etc-letsencrypt:
+  www-html:
+  etc-letsencrypt:
