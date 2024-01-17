@@ -15,7 +15,9 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', default=False)
 
-ALLOWED_HOSTS = ['procleaning.kg', 'www.procleaning.kg']
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
+
+SECURE_SSL_REDIRECT = True
 
 # Application definition
 
@@ -39,8 +41,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-SECURE_SSL_REDIRECT = True
 
 ROOT_URLCONF = 'ProCleaning.urls'
 
