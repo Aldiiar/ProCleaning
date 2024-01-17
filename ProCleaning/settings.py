@@ -17,8 +17,6 @@ DEBUG = os.getenv('DEBUG', default=False)
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
 
-SECURE_SSL_REDIRECT = True
-
 # Application definition
 
 INSTALLED_APPS = [
