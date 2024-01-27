@@ -8,6 +8,11 @@ class MainPageView(ListView):
     template_name = 'layouts/index.html'
     context_object_name = 'machines'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['current_category'] = get_object_or_404(Category_of_Machine, pk=self.kwargs['category_id'])
+        return context
+
 
 class MachinePageView(ListView):
     model = Machines
