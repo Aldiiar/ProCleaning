@@ -57,7 +57,7 @@
                         <div class="card">
                             <img src="/media/{{ machine.photo }}" alt="">
                             <button class="card__btn">
-                                <a href="{% url 'category_page' category_id=card.category.pk %}">{{ card.category.name }}</a>
+                                <a href="{% url 'category_page' machine.id %}">{{ machine.name }}</a>
                             </button>
                         </div>
                     {% endfor %}
