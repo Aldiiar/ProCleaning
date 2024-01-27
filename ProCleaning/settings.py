@@ -17,6 +17,8 @@ DEBUG = os.getenv('DEBUG', default=False)
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
 
+CSRF_TRUSTED_ORIGINS = ["https://procleaning.kg"]
+
 # Application definition
 
 INSTALLED_APPS = [
