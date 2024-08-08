@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROCLEANING</title>
+    <title>{{ cards.name_2 }} - Поломоечная/Подметальная Машина | Procleaning Бишкек</title>
+    <meta name="description" content="{{ cards.name_2 }} - {{ cards.info }}. Узнайте больше и свяжитесь с нами для заказа.">
     <link rel="stylesheet" href="{% static 'products.css' %}">
 </head>
 <body>
@@ -13,7 +14,7 @@
             <div class="info">
                 <div class="logo">
                     <a href="/">
-                        <img src="/static/images/Procleaning-Logo.png" alt="Логотип Procleaning">
+                        <img src="/static/images/Procleaning-Logo.png" alt="Procleaning - клининговое оборудование в Бишкеке">
                     </a>
                 </div>
                 <div class="info__title">
@@ -23,10 +24,10 @@
                 <div class="icon">
                     <a href="tel:+996703813814" class="header-number">+996 703 81 38 14</a>
                     <a href="https://wa.me/996703813814">
-                        <img src="/static/images/WhatsApp.svg" alt="">
+                        <img src="/static/images/WhatsApp.svg" alt="Связаться через WhatsApp">
                     </a>
                     <a href="https://www.instagram.com/procleaning.kg/">
-                        <img src="/static/images/instagram-Logo.svg" alt="">
+                        <img src="/static/images/instagram-Logo.svg" alt="Procleaning в Instagram">
                     </a>
                 </div>
             </div>
@@ -37,15 +38,13 @@
             <div class="container">
                 <div class="car">
                     <div class="car__image">
-                        <img src="/media/{{ cards.photo_2 }}" alt="">
+                        <img src="/media/{{ cards.photo_2 }}" alt="{{ cards.name_2 }} - Поломоечная/Подметальная машина">
                     </div>
                     <div class="car__text">
                         <div class="car__btn">
+                            <h1>{{ cards.name_2 }} - Поломоечная/Подметальная машина</h1>
                             <p class="tg__text">
-                                -{{ cards.in_stock }}-
-                            </p>
-                            <p class="eb_text">
-                                {{ cards.name_2 }}
+                                В наличии: {{ cards.in_stock }}
                             </p>
                             <div class="dk_text">
                                 <p>
@@ -56,7 +55,7 @@
                                 {{ cards.info_2 }}
                             </p>
                             <div class="btn__car">
-                                <button class="white" id="white-button"><a href="{{ cards.video_link }}" target="_blank" class="white">Посмотреть видео</a></button>
+                                <button class="white" id="white-button"><a href="{{ cards.video_link }}" target="_blank" class="white">Видео: {{ cards.name_2 }}</a></button>
                                 <button class="green"><a href="tel:+996703813814" class="green">Связаться</a></button>
                             </div>
                         </div>
@@ -65,12 +64,13 @@
             </div>
         </section>
     </main>
-
     <footer>
         <div class="container">
             <div class="footer_t">
                 <div class="footer__iner">
-                    
+                    <a href="/">
+                        <img src="/static/images/Procleaning-Logo.png" alt="Procleaning - клининговое оборудование в Бишкеке">
+                    </a>
                 </div>
                 <div class="footer__info">
                     <p>Телефон</p>
@@ -85,13 +85,7 @@
                     </a>
                 </div>
                 <div class="footer__info">
-                    <a href="">
-
-                    </a>
-
-                    <a href="">
-
-                    </a>
+                    <!-- Дополнительные ссылки или информация -->
                 </div>
             </div>
         </div>

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROCLEANING</title>
+    <title>Каталог Поломоечных и Подметальных Машин | Procleaning в Бишкеке</title>
+    <meta name="description" content="Ознакомьтесь с нашим каталогом поломоечных и подметальных машин от производителя Eureka. Оборудование для клининга в Бишкеке.">
     <link rel="stylesheet" href="{% static 'products.css' %}">
 </head>
 <body>
@@ -13,7 +14,7 @@
             <div class="info">
                 <div class="logo">
                     <a href="/">
-                        <img src="/static/images/Procleaning-Logo.png" alt="Логотип Procleaning">
+                        <img src="/static/images/Procleaning-Logo.png" alt="Procleaning - клининговое оборудование в Бишкеке">
                     </a>
                 </div>
                 <div class="info__title">
@@ -23,10 +24,10 @@
                 <div class="icon">
                     <a href="tel:+996703813814" class="header-number">+996 703 81 38 14</a>
                     <a href="https://wa.me/996703813814">
-                        <img src="/static/images/WhatsApp.svg" alt="">
+                        <img src="/static/images/WhatsApp.svg" alt="Связаться через WhatsApp">
                     </a>
                     <a href="https://www.instagram.com/procleaning.kg/">
-                        <img src="/static/images/instagram-Logo.svg" alt="">
+                        <img src="/static/images/instagram-Logo.svg" alt="Procleaning в Instagram">
                     </a>
                 </div>
             </div>
@@ -52,11 +53,11 @@
                     <div class="order__card">
                         <div class="card__mation">
                             <div class="circle"></div>
-                            <img src="/media/{{ card.photo }}" alt="">
+                            <img src="/media/{{ card.photo }}" alt="{{ card.name }} - Поломоечная/Подметальная машина">
                         </div>
                         <div class="card__info">
                             <p>{{ card.name }}</p>
-                            <button><a href="{% url 'category_page' category_id=card.category.pk %}{{ card.id }}">Подробнее</a></button>
+                            <button><a href="{% url 'category_page' category_id=card.category.pk %}{{ card.id }}">Подробнее о {{ card.name }}</a></button>
                         </div>
                     </div>
                 {% endfor %}
@@ -69,7 +70,7 @@
             <div class="footer">
                 <div class="footer__iner">
                     <a href="/">
-                        <img src="/static/images/Procleaning-Logo.png" alt="">
+                        <img src="/static/images/Procleaning-Logo.png" alt="Procleaning - клининговое оборудование в Бишкеке">
                     </a>
                 </div>
                 <div class="footer__info">
@@ -86,11 +87,10 @@
                 </div>
                 <div class="footer__info">
                     <a href="https://wa.me/996703813814">
-                        <img src="/static/images/WhatsApp.svg" alt="">
+                        <img src="/static/images/WhatsApp.svg" alt="Связаться через WhatsApp">
                     </a>
-
                     <a href="https://www.instagram.com/procleaning.kg/">
-                        <img src="/static/images/instagram-Logo.svg" alt="">
+                        <img src="/static/images/instagram-Logo.svg" alt="Procleaning в Instagram">
                     </a>
                 </div>
             </div>
